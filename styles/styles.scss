@@ -1,0 +1,16 @@
+//font import goes here
+
+$blueishcolor: #0284c7;
+$blackishcolor: #0f172a;
+$whiteishcolor: #f8fafc;
+$greyishcolor: #e2e8f0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+}
