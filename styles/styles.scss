@@ -18,7 +18,7 @@ $font: 'Inter', sans-serif;
 }
 
 .profilePicture {
-    width: 55px
+    width: 65px
 }
 
 .container {
@@ -69,6 +69,7 @@ $font: 'Inter', sans-serif;
 .header {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
 }
 
 .searchbar, .profile {
@@ -87,4 +88,24 @@ $font: 'Inter', sans-serif;
 
 .topbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome, .buttons {
+    margin: 0 3%;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    .text {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 14px;
+        .name {
+            font-size: 18px;
+        }
+    }
 }
