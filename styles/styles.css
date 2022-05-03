@@ -74,4 +74,8 @@
   font-size: 20px;
 }
 
+.topbar {
+  display: flex;
+}
+
 /*# sourceMappingURL=styles.css.map */
