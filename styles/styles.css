@@ -10,6 +10,10 @@
   padding: 5px;
 }
 
+.profilePicture {
+  width: 55px;
+}
+
 .container {
   display: grid;
   grid-template-columns: min(40%, 300px) auto;
@@ -48,6 +52,26 @@
 
 .header, .topbar {
   grid-column: 2;
+  color: #0f172a;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar, .profile {
+  display: flex;
+  align-items: center;
+  margin: 0 3%;
+}
+.searchbar .icon, .profile .icon {
+  padding-inline: 10px;
+}
+
+.profile {
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
