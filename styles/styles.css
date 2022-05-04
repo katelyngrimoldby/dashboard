@@ -61,6 +61,15 @@
   justify-content: space-between;
   margin-top: 15px;
 }
+.header input {
+  background-color: #e2e8f0;
+  border: none;
+  height: 30px;
+  width: 500px;
+  border-radius: 15px;
+  padding: 0 20px;
+  font-size: 18px;
+}
 
 .searchbar, .profile {
   display: flex;
@@ -86,9 +95,15 @@
   margin: 0 3%;
 }
 
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+
 .welcome {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .welcome .text {
   display: flex;
@@ -106,6 +121,7 @@
   background-color: #e2e8f0;
   padding-inline: 3%;
   gap: 3%;
+  padding-top: 25px;
 }
 .main h2 {
   padding: 15px 0;
@@ -147,6 +163,16 @@
 .discover .card .content {
   display: flex;
   flex-direction: column;
+}
+
+button {
+  background-color: #0284c7;
+  color: #f8fafc;
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
