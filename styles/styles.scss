@@ -22,9 +22,10 @@ $font: 'Inter', sans-serif;
 }
 
 .container {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: min(40%, 300px) auto;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 100px 100px auto;
     font-family: $font;
 }
 
@@ -34,7 +35,7 @@ $font: 'Inter', sans-serif;
     grid-row: 1/4;
     padding: 0 20px;
     font-weight: 600;
-
+    //height: 100vh;
     span {
         display: inline-flex;
         align-items: center;
@@ -107,5 +108,54 @@ $font: 'Inter', sans-serif;
         .name {
             font-size: 18px;
         }
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: $greyishcolor;
+    padding-inline: 3%;
+    gap: 3%;
+    h2 {
+        padding: 15px 0;
+    }
+}
+
+.card {
+    display: inline-block;
+    background-color: $whiteishcolor;
+}
+
+.side {
+    grid-column: 2;
+    .card {
+        width: 300px;
+    }
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    .card {
+        height: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.discover .card {
+    display: flex;
+    align-items: center;
+    .content {
+        display: flex;
+        flex-direction: column;
     }
 }

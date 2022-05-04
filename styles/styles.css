@@ -15,9 +15,10 @@
 }
 
 .container {
+  min-height: 100vh;
   display: grid;
   grid-template-columns: min(40%, 300px) auto;
-  grid-template-rows: 1fr 1fr auto;
+  grid-template-rows: 100px 100px auto;
   font-family: "Inter", sans-serif;
 }
 
@@ -97,6 +98,55 @@
 }
 .welcome .text .name {
   font-size: 18px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #e2e8f0;
+  padding-inline: 3%;
+  gap: 3%;
+}
+.main h2 {
+  padding: 15px 0;
+}
+
+.card {
+  display: inline-block;
+  background-color: #f8fafc;
+}
+
+.side {
+  grid-column: 2;
+}
+.side .card {
+  width: 300px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.project-container .card {
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+.project-container .actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.discover .card {
+  display: flex;
+  align-items: center;
+}
+.discover .card .content {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
