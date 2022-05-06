@@ -4,6 +4,7 @@ $blueishcolor: #0284c7;
 $blackishcolor: #0f172a;
 $whiteishcolor: #f8fafc;
 $greyishcolor: #e2e8f0;
+$midgreyishcolor: #475569;
 $font: 'Inter', sans-serif;
 
 * {
@@ -35,7 +36,6 @@ $font: 'Inter', sans-serif;
     grid-row: 1/4;
     padding: 0 20px;
     font-weight: 600;
-    //height: 100vh;
     span {
         display: inline-flex;
         align-items: center;
@@ -131,9 +131,9 @@ $font: 'Inter', sans-serif;
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: $greyishcolor;
-    padding-inline: 3%;
     gap: 3%;
-    padding-top: 25px;
+    padding: 25px 0;
+    padding-inline: 3%;
     h2 {
         padding: 15px 0;
     }
@@ -141,7 +141,12 @@ $font: 'Inter', sans-serif;
 
 .card {
     display: inline-block;
-    background-color: $whiteishcolor;
+    line-height: 1.5;
+    padding: 20px;
+
+    p, span {
+        color: $midgreyishcolor;
+    }
 }
 
 .side {
@@ -161,6 +166,9 @@ $font: 'Inter', sans-serif;
         flex-direction: column;
         justify-content: space-between;
         padding: 15px;
+        border-left: 7px solid $blueishcolor;
+        border-radius: 5px;
+        background-color: $whiteishcolor;
     }
     .actions {
         display: flex;
@@ -168,9 +176,30 @@ $font: 'Inter', sans-serif;
     }
 }
 
+.card-group {
+    background-color: $whiteishcolor;
+    border-radius: 5px;
+}
+
+.announcements .card{
+    &:not(:last-of-type)::after {
+            content: '';
+            height: 1px;
+            width: 200px;
+            position: absolute;
+            background-color: $greyishcolor;
+            margin-inline: 25px;
+            margin-top: 15px;
+    }
+}
+
 .discover .card {
     display: flex;
     align-items: center;
+    gap: 10px;
+    h3 {
+        font-size: 17px;
+    }
     .content {
         display: flex;
         flex-direction: column;

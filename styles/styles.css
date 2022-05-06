@@ -119,9 +119,9 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   background-color: #e2e8f0;
-  padding-inline: 3%;
   gap: 3%;
-  padding-top: 25px;
+  padding: 25px 0;
+  padding-inline: 3%;
 }
 .main h2 {
   padding: 15px 0;
@@ -129,7 +129,11 @@
 
 .card {
   display: inline-block;
-  background-color: #f8fafc;
+  line-height: 1.5;
+  padding: 20px;
+}
+.card p, .card span {
+  color: #475569;
 }
 
 .side {
@@ -150,15 +154,37 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
+  border-left: 7px solid #0284c7;
+  border-radius: 5px;
+  background-color: #f8fafc;
 }
 .project-container .actions {
   display: flex;
   justify-content: flex-end;
 }
 
+.card-group {
+  background-color: #f8fafc;
+  border-radius: 5px;
+}
+
+.announcements .card:not(:last-of-type)::after {
+  content: "";
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  background-color: #e2e8f0;
+  margin-inline: 25px;
+  margin-top: 15px;
+}
+
 .discover .card {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+.discover .card h3 {
+  font-size: 17px;
 }
 .discover .card .content {
   display: flex;
